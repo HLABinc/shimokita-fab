@@ -15,7 +15,10 @@
 7. 完了後は冷却を待ち、素手でノズルや熱い造形面に触れません。
 
 > ABSは換気が必要です。材質が不明なら加熱・印刷を始めないでください。
+---
 
 (*)コーディングエージェントはChatGPT Work/Codex（ChatGPT系）かClaude Code（Claude系）で十分でしょう。
 2026年9月下旬現在、ChatGPT Work/CodexのComputer UseによりBlender等3Dモデリングソフトウェアのモデル作成ができるようです。
-パラメトリックな造形であればGcoodinator(https://gcoordinator.readthedocs.io/en/latest/)が得意です
+パラメトリックな造形であればGcoodinatorが得意です。
+
+Gcoodinator：https://gcoordinator.readthedocs.io/en/latest/
