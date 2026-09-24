@@ -1,10 +1,13 @@
+### 多くの場合はこのメッセージをAIにコピペしてEnterキーを押せばどうにかなります。
+> 3Dプリントをしたいので、このページの内容のセットアップ手順を教えてください。
+> https://github.com/HLABinc/shimokita-fab
+
+
+---
 # Quick Start
 
-
-0. 3Dプリントに初めてならばコーディングエージェントの導入を勧めます。ChatGPT Work/Codex（ChatGPT系）かClaude Code（Claude系）で十分でしょう。(*)
 1. プリンタの電源を入れ、USBでPCへ接続します。
-2. コーディングエージェントに、このページのURLを渡し印刷したいと伝えます。フィラメントの材質はPLA/ABSと選択できますが、現在あるフィラメントはABSです。
-> https://github.com/HLABinc/shimokita-fab
+2. コーディングエージェント(*)に、このページのURLを渡し印刷したいと伝えます。フィラメントの材質はPLA/ABSと選択できますが、現在あるフィラメントはABSです。
 3. 造形面から物・工具・前回の樹脂を取り除き、フィラメントがノズルまでロード済みか確認します。
 4. エージェントが示す機種・温度・造形範囲を確認してから印刷を許可します。
 5. 最初の層が定着するまで目視し、印刷中も離れない方がいいでしょう。
@@ -12,5 +15,7 @@
 7. 完了後は冷却を待ち、素手でノズルや熱い造形面に触れません。
 
 > ABSは換気が必要です。材質が不明なら加熱・印刷を始めないでください。
-(*)2026年9月下旬現在、ChatGPT Work/CodexのComputer UseによりBlender等3Dモデリングソフトウェアのモデル作成ができるようです。
+
+(*)コーディングエージェントはChatGPT Work/Codex（ChatGPT系）かClaude Code（Claude系）で十分でしょう。
+2026年9月下旬現在、ChatGPT Work/CodexのComputer UseによりBlender等3Dモデリングソフトウェアのモデル作成ができるようです。
 パラメトリックな造形であればGcoodinator(https://gcoordinator.readthedocs.io/en/latest/)が得意です
