@@ -1,9 +1,24 @@
-﻿# Agent Instructions
+# Agent Instructions
 
-This repository supports shared fabrication equipment at Shimokita College.
+このリポジトリはシモキタカレッジの共用ファブ設備用です。利用者には `README.md` と `QUICKSTART.md` だけを案内し、技術作業はエージェントが行ってください。
 
-- Identify the host OS and connected machine before changing anything.
-- Read the matching material under `hardware/`.
-- Do not flash firmware or change persistent printer settings until the current state is identified and backed up.
-- Validate G-code bounds, temperatures, homing, and the target machine before printing.
-- Prefer reusable profiles and scripts that can be committed back to this repository.
+## 作業前
+
+1. OS、接続USB機器、プリンタ機種、フィラメント材質を実物で確認する。
+2. `hardware/qidi-x-one/README.md` を最後まで読む。
+3. 手・工具・残骸が造形室外にあることを現場の利用者へ確認する。Webカメラがあれば、エージェントも最新画像を補助確認できる。
+4. ファームウェアを書き換えない。永続設定を変える前に現状を記録する。
+5. APIキー、パスワード、OctoPrintの`secretKey`をリポジトリや出力へ含めない。
+
+## 印刷前の必須確認
+
+- G-codeの対象機種、全移動範囲、最高温度、座標/押出モード、Home、終了処理を検査する。
+- スプール表示から材質を確認し、材質に合う温度を使う。
+- ノズルを適温にし、短く押し出して先端から材料が安定して出ることを確認する。
+- `M84`後や人が軸を動かした可能性がある場合、座標を信用せず安全確認後に全軸Homeする。
+- G-codeはアップロード後に選択し、利用者の了承前に自動印刷しない。
+- 初層の定着を確認するまで監視する。剥離、糸の塊、異音、煙、通信異常なら停止する。
+
+## 停止
+
+通常は印刷をキャンセルしてから `M104 S0`, `M140 S0`, `M106 S0`, `M84`。目標0℃を再確認し、安全温度まで監視する。煙や火災の兆候があればソフトウェア操作に頼らず、人の安全を優先して電源を遮断する。ヒーターを無人で保持しない。
