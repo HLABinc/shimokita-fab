@@ -1,5 +1,7 @@
 # Quick Start
 
+
+0. 3Dプリントに初めてならばコーディングエージェントの導入を勧めます。Codex（ChatGPT系）かClaude Code（Claude系）で十分でしょう。
 1. プリンタの電源を入れ、USBでPCへ接続します。
 2. コーディングエージェントに、このページのURLを渡し印刷したいと伝えます。フィラメントの材質はPLA/ABSと選択できますが、現在あるフィラメントはABSです。
 > https://github.com/HLABinc/shimokita-fab
